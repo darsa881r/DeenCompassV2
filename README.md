@@ -4,10 +4,6 @@ DeenCompass is a lightweight web + API app that helps users going through tough 
 **Educational only — not a fatwā engine.**
 
 
-```md
-<p align="center">
-  <img src="Screenshot 2025-10-25 015203.png" alt="DeenCompass demo UI" width="820">
-</p>
 
 ---
 
