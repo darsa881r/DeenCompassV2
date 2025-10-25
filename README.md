@@ -3,6 +3,32 @@
 DeenCompass is a lightweight web + API app that helps users going through tough times ask faith-aligned questions and receive **citations-first** answers grounded in **Qur’an, authentic ḥadīth (with grading), fiqh across madhāhib, and reputable tafsīr**.  
 **Educational only — not a fatwā engine.**
 
+# DeenCompassV2 — Citations-First Scholar Chat
+
+<p align="center">
+  <img src="docs/deencompass-demo.png" alt="DeenCompass demo UI" width="820">
+</p>
+
+DeenCompass is a lightweight web + API app that helps users going through tough times ask faith-aligned questions and receive **citations-first** answers grounded in **Qur’an, authentic ḥadīth (with grading), fiqh across madhāhib, and reputable tafsīr**.  
+**Educational only — not a fatwā engine.**
+
+---
+
+## ✨ Features
+
+- **Citations-first** responses (no speculation; sources required).
+- **Simple UI**: one question box → “Ask the Scholar” → answer.
+- **Pluggable providers** (server-side):
+  - `openai` (default; e.g., `gpt-5`, `gpt-4o-mini`)
+  - `gemini` (Google GenAI)
+  - `llama` (OpenAI-compatible local server)
+- **FastAPI** backend with clean JSON responses.
+- **No secrets in frontend** — API keys live in `.env` on the server.
+
+---
+
+## 🏗️ Project Structure
+
 
 
 ---
