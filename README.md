@@ -3,6 +3,12 @@
 DeenCompass is a lightweight web + API app that helps users going through tough times ask faith-aligned questions and receive **citations-first** answers grounded in **Qur’an, authentic ḥadīth (with grading), fiqh across madhāhib, and reputable tafsīr**.  
 **Educational only — not a fatwā engine.**
 
+
+```md
+<p align="center">
+  <img src="Screenshot 2025-10-25 015203.png" alt="DeenCompass demo UI" width="820">
+</p>
+
 ---
 
 ## ✨ Features
