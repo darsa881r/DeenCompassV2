@@ -1,0 +1,6 @@
+﻿fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-dotenv==1.0.1
+openai>=1.40.0          # OpenAI SDK for GPT-5
+google-genai>=1.0.0     # Gemini SDK
+groq>=0.12.0            # Groq SDK for Llama API

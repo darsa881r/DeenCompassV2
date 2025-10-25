@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>DeenCompass — Scholar Chat (GPT-5)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Static page — no secrets. Calls http://127.0.0.1:8000/api/chat -->
+  <style>
+    :root{
+      --bg:#0b1020; --ink:#e9eef7; --muted:#a8b3cf;
+      --card:#121a33; --edge:#1b274f; --ring:rgba(122,162,255,.35);
+      --btn1:#2a48b6; --btn2:#203b93;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background: radial-gradient(1200px 600px at 70% -10%, #17234a 0%, var(--bg) 55%);
+      color:var(--ink); margin:0; padding:24px 16px 56px;
+      max-width: 940px; margin-inline: auto;
+    }
+    h1{margin:.2rem 0 0 0; font-size:1.6rem}
+    .note{color:var(--muted); margin:.4rem 0 1.2rem 0}
+    .row{
+      display:grid; grid-template-columns: 1fr auto; gap:.75rem;
+      background:var(--card); border:1px solid var(--edge); border-radius:16px; padding:14px;
+    }
+    textarea{
+      width:100%; height:140px; resize:vertical; padding:12px;
+      background:#0c1329; border:1px solid #213061; color:var(--ink); border-radius:10px;
+      outline:none; transition: box-shadow .15s, border-color .15s;
+    }
+    textarea:focus{ border-color:#2a448f; box-shadow:0 0 0 4px var(--ring); }
+    button{
+      padding:.85rem 1.2rem; cursor:pointer; border-radius:12px; font-weight:600; color:#fff;
+      border:1px solid #27449d; background:linear-gradient(135deg,var(--btn1),var(--btn2));
+      box-shadow:0 8px 22px rgba(61,110,255,.35);
+      height:max-content;
+    }
+    #answer{
+      white-space:pre-wrap; background:#0c1329; color:#e7efff; border:1px solid #213061;
+      padding:14px; border-radius:12px; min-height:120px; margin-top:.6rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>DeenCompass — citations-first Q&amp;A</h1>
+  <p class="note">
+    The assistant will only answer with verifiable sources (Qur’an, ḥadīth with grading, sīrah, fiqh). Educational use — not a fatwā.
+  </p>
+
+  <!-- Input row: big text area + Ask button -->
+  <div class="row">
+    <textarea id="q" placeholder="Type your question here…&#10;Example: How do I calculate zakāt when I also owe a personal debt? Please cite Qur’an, graded ḥadīth, and fiqh positions (note differences across madhāhib)."></textarea>
+    <button id="ask">Ask the Scholar</button>
+  </div>
+
+  <!-- Answer area -->
+  <h3 style="margin-top:1.2rem;">Answer</h3>
+  <div id="answer">Your answer will appear here.</div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿# Python
+__pycache__/
+.venv/
+server/.env*
+*_backup*.py
+*_backup*.js
+*_backup*.html
+# Node (if you add tooling later)
+node_modules/
+
